@@ -19,7 +19,7 @@ with open(r'D:\tacotron-master\tacotron-master\LJSpeech-1.0\labels.txt','w') as 
                 file.write("\n")
                 file.flush()
             
-then, I revised some text manually
+then, I revised some text manually to somewhat avoid unbalanced data.
 
 1.line 5936 replace “sponge” to "sponge"
 
