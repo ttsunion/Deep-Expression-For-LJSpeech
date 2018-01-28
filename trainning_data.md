@@ -4,7 +4,22 @@
 
 * [LJ Speech](https://keithito.com/LJ-Speech-Dataset/) (Public Domain)
 
-#processing LJSpeech-1.0 metadata.csv can be found in [keithito_tacotron](https://github.com/keithito/tacotron), after that, I revised some text manually
+#processing LJSpeech-1.0 metadata.csv can be found in [keithito_tacotron](https://github.com/keithito/tacotron), after that,
+
+we can get train.txt, then use a python script below to transcribe his results to mine.
+
+with open(r'D:\tacotron-master\tacotron-master\LJSpeech-1.0\labels.txt','w') as file:
+    with open(r'D:\tacotron-master\tacotron-master\LJSpeech-1.0\metadata.csv','r',encoding='utf-8') as file1:
+        with open(r'D:\tacotron-master\tacotron-master\LJSpeech-1.0\train.txt','r',encoding='utf-8') as file2:
+            line1 = file1.readlines()
+            line2 = file2.readlines()
+            for i in range(len(line1)):
+                line = line1[i].split('|')[0]+'|'+line2[i].split('|')[1]
+                file.write(line)
+                file.write("\n")
+                file.flush()
+            
+then, I revised some text manually
 
 1.line 5936 replace “sponge” to "sponge"
 
