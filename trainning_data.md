@@ -4,7 +4,7 @@
 
 * [LJ Speech](https://keithito.com/LJ-Speech-Dataset/) (Public Domain)
 
-#processing LJSpeech-1.0 metadata.csv can be found in *[keithito_tacotron](https://github.com/keithito/tacotron), after that, I revised some text manually
+#processing LJSpeech-1.0 metadata.csv can be found in * [keithito_tacotron](https://github.com/keithito/tacotron), after that, I revised some text manually
 
 1.line 5936 replace “sponge” to "sponge"
 
